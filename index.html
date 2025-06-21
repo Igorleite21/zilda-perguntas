@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Perguntas da Vó Zilda</title>
+</head>
+<body>
+   <div class="container" id="telaInicial">
+    <h1>Perguntas da Vóvó Zilda 💙</h1>
+    <p>Digite seu nome para começar, meu netinho:</p>
+    <input type="text" id="nomeJogador" placeholder="Seu nome aqui..." />
+    <button onclick="iniciarJogo()">Começar Jogo</button>
+  </div>
+
+  <div class="container" id="telaJogo" style="display: none;">
+    <h1>Perguntas da Vóvó Zilda 💙</h1>
+    <div id="perguntaTexto"></div>
+    <div class="alternativas" id="alternativas"></div>
+    <div id="pontuacaoAtual" style="margin-top: 10px;"></div>
+  </div>
+
+  <div class="container" id="telaFinal" style="display: none;">
+    <h1>Resultado final 💙</h1>
+    <div id="mensagemFinal"></div>
+    <button onclick="recomecarJogo()">🔁 Jogar novamente</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
